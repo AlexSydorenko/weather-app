@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.container {
+  width: 465px;
+  height: 105px;
+  border-radius: 30px;
+  box-shadow: var(--main-shadow);
+  background-color: #fff;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-weather-info {
+  color: #fff;
+  height: 760px;
+  background: linear-gradient(#64B5FF, #FFFFFF);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-weather-info i {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-not-found {
+  height: 450px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Animations */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes innerContentScale {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.innerContentScale {
+  animation: innerContentScale 0.5s forwards;
+  animation-delay: .3s;
 }

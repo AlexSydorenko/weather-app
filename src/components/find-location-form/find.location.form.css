@@ -1,0 +1,45 @@
+.find-location-form {
+    padding: 22px 33px;
+
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    transition: .6s ease-out;
+}
+
+.location-input::placeholder {
+    color: inherit;
+    text-transform: capitalize;
+}
+
+.location-input {
+    background-color: inherit;
+    text-transform: uppercase;
+}
+
+.find-location-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #EAEAEA;
+    justify-self: end;
+    transition: all .3s ease;
+}
+
+.find-location-btn:hover {
+    box-shadow: var(--main-shadow);
+}
+
+.find-location-btn_white {
+    background-color: inherit;
+}
+
+.find-location-btn_white:hover {
+    box-shadow: none;
+}
+
+.fa-location-dot, .fa-magnifying-glass {
+    color: var(--grey-icons-color);
+    font-size: 28px;
+}
